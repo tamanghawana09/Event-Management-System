@@ -1,0 +1,35 @@
+[29-Jul-2024 08:23:28 UTC] PHP Parse error:  syntax error, unexpected token ";" in C:\xampp\htdocs\event-management\wp-content\themes\event\single-events.php on line 7
+[29-Jul-2024 08:23:54 UTC] PHP Parse error:  syntax error, unexpected token ";" in C:\xampp\htdocs\event-management\wp-content\themes\event\single-events.php on line 7
+[29-Jul-2024 08:26:47 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\event-management\wp-content\themes\event\single-events.php on line 8
+[29-Jul-2024 10:07:04 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 873
+[29-Jul-2024 10:07:04 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 873
+[29-Jul-2024 10:07:04 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 889
+[29-Jul-2024 10:07:04 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 889
+[29-Jul-2024 10:15:55 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 873
+[29-Jul-2024 10:15:55 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 873
+[29-Jul-2024 10:15:55 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 889
+[29-Jul-2024 10:15:55 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\event-management\wp-content\plugins\advanced-custom-fields-pro\includes\api\api-template.php on line 889
+[29-Jul-2024 10:32:05 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_events_archive_page" not found or invalid function name in C:\xampp\htdocs\event-management\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\event-management\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\event-management\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\event-management\wp-admin\admin.php(259): do_action('events_page_eve...')
+#3 C:\xampp\htdocs\event-management\wp-admin\edit.php(10): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\event-management\wp-includes\class-wp-hook.php on line 324
+[29-Jul-2024 10:32:28 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_events_archive_page" not found or invalid function name in C:\xampp\htdocs\event-management\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\event-management\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\event-management\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\event-management\wp-admin\admin.php(259): do_action('events_page_eve...')
+#3 C:\xampp\htdocs\event-management\wp-admin\edit.php(10): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\event-management\wp-includes\class-wp-hook.php on line 324
+[29-Jul-2024 10:39:25 UTC] PHP Notice:  Function wp_enqueue_script() was called <strong>incorrectly</strong>. "wp-editor" script should not be enqueued together with the new widgets editor (wp-edit-widgets or wp-customize-widgets). Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.8.0.) in C:\xampp\htdocs\event-management\wp-includes\functions.php on line 6085
+[29-Jul-2024 10:42:44 UTC] PHP Parse error:  Unclosed '{' on line 175 in C:\xampp\htdocs\event-management\wp-content\themes\event\functions.php on line 176
+[29-Jul-2024 10:42:44 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\event-management\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[29-Jul-2024 10:42:44 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\event-management\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[29-Jul-2024 10:43:00 UTC] PHP Parse error:  Unclosed '{' on line 175 in C:\xampp\htdocs\event-management\wp-content\themes\event\functions.php on line 176
+[29-Jul-2024 10:44:57 UTC] PHP Parse error:  Unclosed '{' on line 175 in C:\xampp\htdocs\event-management\wp-content\themes\event\functions.php on line 176
+[29-Jul-2024 10:44:58 UTC] PHP Parse error:  Unclosed '{' on line 175 in C:\xampp\htdocs\event-management\wp-content\themes\event\functions.php on line 176
+[29-Jul-2024 10:45:00 UTC] PHP Parse error:  Unclosed '{' on line 175 in C:\xampp\htdocs\event-management\wp-content\themes\event\functions.php on line 176
