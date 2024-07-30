@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function event_setup() {
+function event_management_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on Event-Management, use a find and replace
-		* to change 'event' to the name of your theme in all the template files.
+		* to change 'event_management' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'event', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'event_management', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function event_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'event' ),
+			'menu-1' => esc_html__( 'Primary', 'event_management' ),
 		)
 	);
 
@@ -74,7 +74,7 @@ function event_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'event_custom_background_args',
+			'event_management_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function event_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'event_setup' );
+add_action( 'after_setup_theme', 'event_management_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +109,22 @@ add_action( 'after_setup_theme', 'event_setup' );
  *
  * @global int $content_width
  */
-function event_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'event_content_width', 640 );
+function event_management_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'event_management_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'event_content_width', 0 );
+add_action( 'after_setup_theme', 'event_management_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function event_widgets_init() {
+function event_management_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'event' ),
+			'name'          => esc_html__( 'Sidebar', 'event_management' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'event' ),
+			'description'   => esc_html__( 'Add widgets here.', 'event_management' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,22 +132,22 @@ function event_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'event_widgets_init' );
+add_action( 'widgets_init', 'event_management_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function event_scripts() {
-	wp_enqueue_style( 'event-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'event-style', 'rtl', 'replace' );
+function event_management_scripts() {
+	wp_enqueue_style( 'event_management-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'event_management-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'event-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'event_management-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'event_scripts' );
+add_action( 'wp_enqueue_scripts', 'event_management_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -175,3 +175,4 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+

@@ -1,0 +1,52 @@
+/*
+    Theme Name: Event Management Child theme
+    Template: event_management
+    Author: Hawana Tamang
+    Description: This is a child theme for test
+    Version: 1.0.0
+*/
+@import "css/color.css";
+@import "css/reset.css";
+
+.site-branding {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+.site-title {
+  width: 100%;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  color: white;
+}
+.site-title a {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+
+/* menu styles*/
+.nav-menu {
+  justify-content: flex-end;
+}
+.nav-menu > .menu-item > a {
+  padding: 10px;
+  color: var(--secondary-color);
+  font-family: "Roboto";
+}
+
+.site-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}

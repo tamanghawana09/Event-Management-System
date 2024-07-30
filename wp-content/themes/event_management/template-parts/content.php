@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				event_posted_on();
-				event_posted_by();
+				event_management_posted_on();
+				event_management_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php event_post_thumbnail(); ?>
+	<?php event_management_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'event' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'event_management' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'event' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'event_management' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php event_entry_footer(); ?>
+		<?php event_management_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
