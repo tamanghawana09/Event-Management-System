@@ -32,7 +32,7 @@ class Upcoming_Events_Widget extends WP_Widget {
             'posts_per_page' => $number,
             'meta_query' => array(
                 array(
-                    'key' => 'event_layout', // Meta key for the event date
+                    'key' => 'event_layout_0_event_date', 
                     'value' => $today,
                     'compare' => '>=',
                     'type' => 'NUMERIC'

@@ -42,6 +42,7 @@
                 'description' => __('Events Custom Post Type','textdomain'),
                 'labels' => $labels,
                 'supports' => array('title','editor','thumbnail','revisions'),
+                'taxonomies' => array('event_category'),
                 'hierarchical' => false,
                 'public' => true,
                 'show_ui' => true,
